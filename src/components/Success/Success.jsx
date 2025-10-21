@@ -1,0 +1,108 @@
+import { useEffect, useState } from 'react';
+
+
+const Success = () => {
+    // customer 
+ const [customer, setCustomer] = useState(0);
+const cusEnd = 200;
+const durationCus = 2000;
+let cusStart = 0;
+const eachDuration = Math.round(durationCus/cusEnd);
+
+// rating 
+ const [rating, setRating] = useState(0);
+const ratingEnd = 4.5;
+const durationRate = 2000;
+let ratingStart = 0;
+const ratingDuration = Math.round(durationRate/ (ratingEnd * 10))
+
+   // deliverd 
+ const [projectdel, setprojectdel] = useState(0);
+ let delivary = 0;
+const totalDelivary = 351;
+const delDuration = 2000;
+const eachDelDuration = Math.round(delDuration/totalDelivary);
+
+useEffect(()=>{
+// customer
+const cusTimer = setInterval(()=>{
+    cusStart += 1
+    setCustomer(cusStart)
+    if(cusStart === cusEnd){
+        clearInterval(cusTimer)
+    }
+    
+    
+},eachDuration )
+
+// rating
+const rating = setInterval(()=>{
+    ratingStart += 0.1
+    setRating(parseFloat(ratingStart.toFixed(1)))
+    if(ratingStart === ratingEnd){
+        clearInterval(rating)
+    }
+    
+    
+},ratingDuration )
+
+// deliverd
+const delivaryTimer = setInterval(()=>{
+    delivary += 1
+    setprojectdel(delivary)
+    if(delivary === totalDelivary){
+        clearInterval(delivaryTimer)
+    }
+    
+    
+},eachDelDuration )
+
+
+return ()=> {
+    clearInterval(cusTimer)
+    clearInterval(rating)
+    clearInterval(delivaryTimer)
+}
+},[])
+
+
+
+
+
+
+    return (
+        <>
+            <section className='pt-[170px] pb-[150px]'>
+                <div className="container">
+                    <div className="succes-main flex items-center bg-[#E0FFF9] rounded-[20px] gap-[124px] py-[85px]">
+                        <div className="w-2/5 pl-[50px]">
+                            <p className='font-inter text-2xl font-medium leading-[120%] text-[#6A4DF4] pb-6'>Our Success</p>
+                            <h2 className='font-inter font-semibold text-4xl text-[#151515] pr-[80px] leading-[140%]'>West cost Brand makers-Global Edge</h2>
+
+                        </div>
+                        <div className="w-3/5 flex items-center gap-[90px]">
+                            <div className="items">
+                                <h3 className='font-inter text-[50px] font-bold text-[#151515] pb-5'> {customer}+
+                            </h3>
+                                <p className='font-inter text-xl font-medium text-[#737373] '>Customer Satisfied</p>
+                            </div>
+                            <div className="items">
+                            <h3 className='font-inter text-[50px] font-bold text-[#151515] pb-5'>{rating}+</h3>
+                                <p className='font-inter text-xl font-medium text-[#737373] '>200+ Avg rating</p>
+                            </div>
+                            <div className="items">
+                                <h3 className='font-inter text-[50px] font-bold text-[#151515] pb-5'>{projectdel} +</h3>
+                                <p className='font-inter text-xl font-medium text-[#737373] '>Project Delivered</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+        </>
+    )
+}
+
+export default Success

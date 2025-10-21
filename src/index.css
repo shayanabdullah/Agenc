@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+
+.container {
+    @apply max-w-[1320px] mx-auto bg-transparent
+}
+
+@theme {
+    --font-inter :"Inter", sans-serif;
+}
+
+@layer {
+    .menu ul li a{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26%;
+        color: #ffffff;
+        transition: all 0.3 linear;
+    }
+    .menu ul li a:hover{
+       font-weight: 600;
+       color: #4756DF;
+    }
+    .slick-dots li button {
+    width: 24px !important;
+    height: 24px !important;
+    background: #4756DF !important;
+    border-radius: 50%;
+}
+.slick-dots li button:before {
+    color: transparent !important;
+}
+
+.slick-dots li.slick-active button  {
+background: white !important;
+ position: relative !important; 
+ transition: all .3s ;
+}
+.slick-dots li.slick-active button::before{
+width: 16px !important;
+height: 16px !important;
+background: #4756DF !important;
+border-radius: 50%;
+top: 50% !important;
+left: 50% !important;
+transform: translate(-50%, -50%) !important;
+}
+
+.slick-dots {
+    bottom: -125px !important;
+}
+
+}
