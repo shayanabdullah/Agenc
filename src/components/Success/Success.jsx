@@ -5,14 +5,14 @@ const Success = () => {
     // customer 
  const [customer, setCustomer] = useState(0);
 const cusEnd = 200;
-const durationCus = 2000;
+const durationCus = 4000;
 let cusStart = 0;
 const eachDuration = Math.round(durationCus/cusEnd);
 
 // rating 
  const [rating, setRating] = useState(0);
 const ratingEnd = 4.5;
-const durationRate = 2000;
+const durationRate = 4000;
 let ratingStart = 0;
 const ratingDuration = Math.round(durationRate/ (ratingEnd * 10))
 
@@ -20,7 +20,7 @@ const ratingDuration = Math.round(durationRate/ (ratingEnd * 10))
  const [projectdel, setprojectdel] = useState(0);
  let delivary = 0;
 const totalDelivary = 351;
-const delDuration = 2000;
+const delDuration = 4000;
 const eachDelDuration = Math.round(delDuration/totalDelivary);
 
 useEffect(()=>{
@@ -72,12 +72,12 @@ return ()=> {
 
     return (
         <>
-            <section className='pt-[170px] pb-[150px]'>
+            <section className='lg:pt-[170px] lg:pb-[150px] py-20 bg-white'>
                 <div className="container">
                     <div className="succes-main flex items-center bg-[#E0FFF9] rounded-[20px] gap-[124px] py-[85px]">
                         <div className="w-2/5 pl-[50px]">
                             <p className='font-inter text-2xl font-medium leading-[120%] text-[#6A4DF4] pb-6'>Our Success</p>
-                            <h2 className='font-inter font-semibold text-4xl text-[#151515] pr-[80px] leading-[140%]'>West cost Brand makers-Global Edge</h2>
+                            <h2 className='font-inter font-semibold text-4xl text-[#151515] pr-20 leading-[140%]'>West cost Brand makers-Global Edge</h2>
 
                         </div>
                         <div className="w-3/5 flex items-center gap-[90px]">

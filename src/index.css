@@ -7,9 +7,17 @@
 
 @theme {
     --font-inter :"Inter", sans-serif;
+    --breakpoint-normal : 200px
 }
 
 @layer {
+    .banner{
+        background-image: url(/src/assets/banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
     .menu ul li a{
         font-size: 18px;
         font-weight: 500;
@@ -50,4 +58,16 @@ transform: translate(-50%, -50%) !important;
     bottom: -125px !important;
 }
 
+
+@media (max-width:500px) {
+    ::-webkit-scrollbar{
+        width: 0px !important;
+    }
+
+    .slick-dots {
+    bottom:-30px !important;
+}
+
+    
+}
 }

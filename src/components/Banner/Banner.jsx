@@ -19,15 +19,14 @@ const Banner = () => {
 
     return (
         <>
-            <section className='relative z-10'>
-                <div className="w-full">
-                    <img src={banner} alt="" className='w-full' />
-                </div>
-                <div className="max-w-[1350px] w-full absolute top-[45%] left-1/2 -translate-x-6/12 -translate-y-[45%]">
+            <section className='relative z-10 banner lg:py-[300px] py-[100px]  px-4 '>
+               
+                <div className="container">
+                  <div className="w-full flex items-center justify-center ">
                     <div className="content-main w-full ">
                      <Slider {...settings}>
                            <div className="content-items text-center">
-                            <h1 className='text-[75px] text-white font-inter font-bold leading-[120%] text-center'>We Help brands with high
+                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center'>We Help brands with high
                                 <span className="block">quality services</span>
                             </h1>
                             <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
@@ -41,8 +40,8 @@ const Banner = () => {
 
                         </div>
                            <div className="content-items text-center">
-                            <h1 className='text-[75px] text-white font-inter font-bold leading-[120%] text-center'>Turning Ideas into <span className='block'>Digital Masterpieces</span>
-                                <span className="block">quality services</span>
+                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center capitalize'>Turning Ideas into <span className='md:block'>Digital </span>
+                                <span className="md:block">quality services</span>
                             </h1>
                             <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
@@ -55,7 +54,7 @@ const Banner = () => {
 
                         </div>
                            <div className="content-items text-center">
-                            <h1 className='text-[75px] text-white font-inter font-bold leading-[120%] text-center'>Connecting Brands with <span className='block'>Their Audience</span>
+                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center'>Connecting Brands with <span className='block'>Their Audience</span>
                             </h1>
                             <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
@@ -68,7 +67,7 @@ const Banner = () => {
 
                         </div>
                            <div className="content-items text-center">
-                            <h1 className='text-[75px] text-white font-inter font-bold leading-[120%] text-center'>Where Creativity Meets <span className='block'>Strategy</span>
+                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center'>Where Creativity Meets <span className='block'>Strategy</span>
                             </h1>
                             <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
@@ -82,7 +81,9 @@ const Banner = () => {
                         </div>
                      </Slider>
                     </div>
+                </div>  
                 </div>
+                
 
             </section>
 

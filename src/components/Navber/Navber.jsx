@@ -5,7 +5,7 @@ const [activeLink, setActiveLink] = useState('')
 
   return (
     <>
-    <nav className='bg-transparent absolute top-0 left-0 z-20 w-full '>
+    <nav className='bg-transparent absolute top-0 left-0 z-20 w-full md:block hidden ' >
       <div className="container">
         <div className="nav-main flex justify-between items-center py-[50px]">
           <div className="logo">
