@@ -74,25 +74,25 @@ return ()=> {
         <>
             <section className='lg:pt-[170px] lg:pb-[150px] py-20 bg-white'>
                 <div className="container">
-                    <div className="succes-main flex items-center bg-[#E0FFF9] rounded-[20px] gap-[124px] py-[85px]">
-                        <div className="w-2/5 pl-[50px]">
+                    <div className="succes-main flex items-center flex-col md:flex-row bg-[#E0FFF9] rounded-[20px] md:gap-[124px] py-[85px] px-2">
+                        <div className="md:w-2/5 md:pl-[50px] pl-2 text-center md:text-left">
                             <p className='font-inter text-2xl font-medium leading-[120%] text-[#6A4DF4] pb-6'>Our Success</p>
-                            <h2 className='font-inter font-semibold text-4xl text-[#151515] pr-20 leading-[140%]'>West cost Brand makers-Global Edge</h2>
+                            <h2 className='font-inter font-semibold text-4xl text-[#151515] md:pr-20 leading-[140%] pb-8'>West cost Brand makers-Global Edge</h2>
 
                         </div>
-                        <div className="w-3/5 flex items-center gap-[90px]">
-                            <div className="items">
-                                <h3 className='font-inter text-[50px] font-bold text-[#151515] pb-5'> {customer}+
+                        <div className="md:w-3/5 flex items-center flex-wrap md:flex-row justify-center gap-5 md:gap-[90px]">
+                            <div className="items pr-3">
+                                <h3 className='font-inter md:text-[50px] text-4xl font-bold text-[#151515] pb-5'> {customer}+
                             </h3>
-                                <p className='font-inter text-xl font-medium text-[#737373] '>Customer Satisfied</p>
+                                <p className='font-inter md:text-xl text-[16px] font-medium text-[#737373] '>Customer Satisfied</p>
                             </div>
-                            <div className="items">
-                            <h3 className='font-inter text-[50px] font-bold text-[#151515] pb-5'>{rating}+</h3>
-                                <p className='font-inter text-xl font-medium text-[#737373] '>200+ Avg rating</p>
+                            <div className="items pr-3">
+                            <h3 className='font-inter md:text-[50px] text-4xl font-bold text-[#151515] pb-5'>{rating}+</h3>
+                                <p className='font-inter md:text-xl text-[16px] font-medium text-[#737373] '>200+ Avg rating</p>
                             </div>
-                            <div className="items">
-                                <h3 className='font-inter text-[50px] font-bold text-[#151515] pb-5'>{projectdel} +</h3>
-                                <p className='font-inter text-xl font-medium text-[#737373] '>Project Delivered</p>
+                            <div className="items pt-5">
+                                <h3 className='font-inter md:text-[50px] text-4xl font-bold text-[#151515] pb-5'>{projectdel} +</h3>
+                                <p className='font-inter md:text-xl text-[16px] font-medium text-[#737373] '>Project Delivered</p>
                             </div>
                         </div>
 

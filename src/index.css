@@ -57,7 +57,13 @@ transform: translate(-50%, -50%) !important;
 .slick-dots {
     bottom: -125px !important;
 }
-
+.reviews-items{
+    transition: all .3s ease-in-out;
+}
+.slick-center .reviews-items{
+    background: #F4EFEF !important;
+    transform: scale(1.02);
+}
 
 @media (max-width:500px) {
     ::-webkit-scrollbar{
@@ -67,6 +73,7 @@ transform: translate(-50%, -50%) !important;
     .slick-dots {
     bottom:-30px !important;
 }
+
 
     
 }

@@ -29,7 +29,7 @@ const Choose = () => {
                         </div>
                         <div className="choose-items">
                             <div className="img">
-                                <img src={icon2} alt="" />
+                                <img src={icon} alt="" />
                             </div>
                             <div className="text-box pt-5">
                                 <h2 className='font-inter font-bold text-[25px] text-[#151515]'>Innovative Ideas</h2>
@@ -41,7 +41,7 @@ const Choose = () => {
                         </div>
                         <div className="choose-items">
                             <div className="img">
-                                <img src={icon} alt="" />
+                                <img src={icon2} alt="" />
                             </div>
                             <div className="text-box pt-5">
                                 <h2 className='font-inter font-bold text-[25px] text-[#151515]'>Innovative Ideas</h2>

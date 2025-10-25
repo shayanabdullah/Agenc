@@ -5,6 +5,8 @@ import Success from './components/Success/Success'
 import Service from './components/Service/Service'
 import Work from './components/work/Work'
 import Choose from './components/choose/Choose'
+import Review from './components/Review/Review'
+import Contact from './components/Contact/Contact'
 
 const App = () => {
   return (
@@ -15,8 +17,10 @@ const App = () => {
   <Service/>
   <Work/>
   <Choose/>
+  <Review/>
+  <Contact/>
   </>
   )
 }
 
-export default App
+export default App 
