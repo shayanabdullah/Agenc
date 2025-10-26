@@ -8,7 +8,7 @@ import digital from '../../assets/digital.png'
 const Service = () => {
     return (
         <>
-            <section className="py-[150px] bg-white">   
+            <section className="py-[150px] bg-white" id='service'>   
                 <div className="container">
                     <div className="header w-full text-center pb-14">
                         <h2 className="text-[45px] font-inter font-bold text-[#151515]">Our Provided Services</h2>

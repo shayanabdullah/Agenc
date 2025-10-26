@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
-
+*, html{
+    scroll-behavior: smooth;
+}
 .container {
     @apply max-w-[1320px] mx-auto bg-transparent
 }
 
 @theme {
     --font-inter :"Inter", sans-serif;
-    --breakpoint-normal : 200px
+    --breakpoint-xs : 200px;
+    --breakpoint-normal : 400px
 }
 
 @layer {

@@ -23,7 +23,7 @@ const [activeLink, setActiveLink] = useState('')
             </ul>
           </div>
           <div className="button">
-            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> Contact </button>
+            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Contact</a> </button>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import webApp from '../../assets/web-app.png'
 const Work = () => {
     return (
         <>
-        <section className='py-[150px] bg-[#F3F3F3]'>
+        <section className='py-[150px] bg-[#F3F3F3]' id='about'>
             <div className="container">
                      <div className="header w-full text-center pb-14">
                         <h2 className="text-[45px] font-inter font-bold text-[#151515]">Our Recent Work</h2>

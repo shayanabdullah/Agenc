@@ -7,6 +7,7 @@ import Work from './components/work/Work'
 import Choose from './components/choose/Choose'
 import Review from './components/Review/Review'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
   <Choose/>
   <Review/>
   <Contact/>
+  <Footer/>
   </>
   )
 }

@@ -5,7 +5,7 @@ import icon2 from '../../assets/choose-icon (2).png'
 const Choose = () => {
     return (
         <>
-        <section className='pt-[150px] pb-[106px] bg-white'>
+        <section className='pt-[150px] pb-[106px] bg-white' id='carrers'>
             <div className="container">
                   <div className="header w-full text-center pb-[130px]">
                         <h2 className="text-[45px] font-inter font-bold text-[#151515]">Why You Should  <br />  Choose Agenc </h2>
