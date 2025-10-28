@@ -9,7 +9,7 @@ const Review = () => {
     const NextArrow = ({ onClick }) => {
         return (
             <div
-                className="w-10 h-10 rounded-full bg-[#4756DF] flex items-center justify-center absolute top-1/2 right-0 z-20 -translate-y-1/2 cursor-pointer"
+                className="w-10 h-10 rounded-full bg-[#4756DF] flex items-center justify-center absolute  lg:top-1/2 lg:right-0 z-20 bottom-[-18%] right-[52%] -translate-y-1/2 -translate-x-1/2 cursor-pointer -rotate-180 "
                 onClick={onClick}
             >
                 <i className="fa-solid fa-chevron-right text-white text-lg"></i>
@@ -20,7 +20,7 @@ const Review = () => {
     const PrevArrow = ({ onClick }) => {
         return (
             <div
-                className="w-10 h-10 rounded-full bg-[#4756DF] flex items-center justify-center absolute top-1/2 left-0 z-20 -translate-y-1/2 cursor-pointer"
+                className="w-10 h-10 rounded-full bg-[#4756DF] flex items-center justify-center absolute lg:top-1/2 lg:left-0  z-20 bottom-[-18%] left-[52%] -translate-y-1/2 -translate-x-1/2 cursor-pointer -rotate-180"
                 onClick={onClick}
             >
                 <i className="fa-solid fa-chevron-left text-white text-lg"></i>

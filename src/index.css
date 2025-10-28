@@ -10,7 +10,10 @@
 @theme {
     --font-inter :"Inter", sans-serif;
     --breakpoint-xs : 200px;
-    --breakpoint-normal : 400px
+    --breakpoint-normal : 400px;
+    --breakpoint-normal-2 : 450px;
+    --breakpoint-normal-3 : 600px;
+    --breakpoint-md-2 : 900px;
 }
 
 @layer {

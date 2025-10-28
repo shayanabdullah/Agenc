@@ -19,17 +19,17 @@ const Banner = () => {
 
     return (
         <>
-            <section className='relative z-10 banner lg:py-[300px] py-[100px]  px-4 '>
+            <section className='relative z-10 banner lg:py-[300px] md:py-[220px] py-[140px]  px-4 '>
                
                 <div className="container">
                   <div className="w-full flex items-center justify-center ">
                     <div className="content-main w-full ">
                      <Slider {...settings}>
                            <div className="content-items text-center">
-                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center'>We Help brands with high
+                            <h1 className='lg:text-[75px] normal:text-5xl text-4xl text-white font-inter font-bold leading-[120%] text-center'>We Help brands with high
                                 <span className="block">quality services</span>
                             </h1>
-                            <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
+                            <p className='text-center normal:pt-[51px] pt-[30px] text-white font-inter font-normal normal:text-lg text-xs leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
                                  <span className="block">have suffered alteration in some form, by injected humour, or randomised words </span>
                                  which don't look.
@@ -40,10 +40,10 @@ const Banner = () => {
 
                         </div>
                            <div className="content-items text-center">
-                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center capitalize'>Turning Ideas into <span className='md:block'>Digital </span>
+                            <h1 className='lg:text-[75px] normal:text-5xl text-4xl text-white font-inter font-bold leading-[120%] text-center'>Turning Ideas into <span className='md:block'>Digital </span>
                                 <span className="md:block">quality services</span>
                             </h1>
-                            <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
+                            <p className='text-center normal:pt-[51px] pt-[30px] text-white font-inter font-normal normal:text-lg text-xs leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
                                  <span className="block">have suffered alteration in some form, by injected humour, or randomised words </span>
                                  which don't look.
@@ -54,9 +54,9 @@ const Banner = () => {
 
                         </div>
                            <div className="content-items text-center">
-                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center'>Connecting Brands with <span className='block'>Their Audience</span>
+                            <h1 className='lg:text-[75px] normal:text-5xl text-4xl text-white font-inter font-bold leading-[120%] text-centerr'>Connecting Brands with <span className='block'>Their Audience</span>
                             </h1>
-                            <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
+                            <p className='text-center normal:pt-[51px] pt-[30px] text-white font-inter font-normal normal:text-lg text-xs leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
                                  <span className="block">have suffered alteration in some form, by injected humour, or randomised words </span>
                                  which don't look.
@@ -67,9 +67,9 @@ const Banner = () => {
 
                         </div>
                            <div className="content-items text-center">
-                            <h1 className='lg:text-[75px] text-5xl text-white font-inter font-bold leading-[120%] text-center'>Where Creativity Meets <span className='block'>Strategy</span>
+                            <h1 className='lg:text-[75px] normal:text-5xl text-4xl text-white font-inter font-bold leading-[120%] text-center'>Where Creativity Meets <span className='block'>Strategy</span>
                             </h1>
-                            <p className='text-center pt-[51px] text-white font-inter font-normal text-lg leading-[180%] '>
+                            <p className='text-center normal:pt-[51px] pt-[30px] text-white font-inter font-normal normal:text-lg text-xs leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
                                  <span className="block">have suffered alteration in some form, by injected humour, or randomised words </span>
                                  which don't look.
