@@ -19,7 +19,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='relative z-10 banner lg:py-[300px] md:py-[220px] py-[140px]  px-4 '>
+            <section className='relative z-10 banner lg:py-[300px] md:py-[220px] py-[140px] px-4'>
                
                 <div className="container">
                   <div className="w-full flex items-center justify-center ">
@@ -34,8 +34,8 @@ const Banner = () => {
                                  <span className="block">have suffered alteration in some form, by injected humour, or randomised words </span>
                                  which don't look.
                             </p>
-                               <div className="button py-10">
-            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> Get Started </button>
+                                       <div className="button py-10">
+            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Get Started</a> </button>
           </div>
 
                         </div>
@@ -48,9 +48,10 @@ const Banner = () => {
                                  <span className="block">have suffered alteration in some form, by injected humour, or randomised words </span>
                                  which don't look.
                             </p>
-                               <div className="button py-10">
-            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> Get Started </button>
+                                    <div className="button py-10">
+            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Get Started</a> </button>
           </div>
+
 
                         </div>
                            <div className="content-items text-center">
@@ -62,8 +63,9 @@ const Banner = () => {
                                  which don't look.
                             </p>
                                <div className="button py-10">
-            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> Get Started </button>
+            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Get Started</a> </button>
           </div>
+
 
                         </div>
                            <div className="content-items text-center">
@@ -75,7 +77,7 @@ const Banner = () => {
                                  which don't look.
                             </p>
                                <div className="button py-10">
-            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> Get Started </button>
+            <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Get Started</a> </button>
           </div>
 
                         </div>
