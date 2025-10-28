@@ -31,20 +31,13 @@ const Review = () => {
 
 const settings = {
   speed: 500,
+          slidesToShow: 3,
+        slidesToScroll: 1,
   infinite: true,
   centerMode: true,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   responsive: [
-    {
-      breakpoint: 10000,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        centerMode: true,
-      },
-    },
     {
       breakpoint: 1024,
       settings: {
@@ -58,8 +51,7 @@ const settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: false,
-        arrows: false,
+        centerMode: true,
       },
     },
   ],
