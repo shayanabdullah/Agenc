@@ -13,6 +13,7 @@
     --breakpoint-normal : 400px;
     --breakpoint-normal-2 : 450px;
     --breakpoint-normal-3 : 600px;
+    --breakpoint-xl-2 : 1305px;
     --breakpoint-md-2 : 900px;
 }
 
@@ -66,9 +67,12 @@ transform: translate(-50%, -50%) !important;
 .reviews-items{
     transition: all .3s ease-in-out;
 }
-.slick-center .reviews-items{
+.swiper-slide-next .reviews-items{
     background: #F4EFEF !important;
-    transform: scale(1.02);
+}
+
+.swiper-navigation-icon{
+    display: none;
 }
 
 @media (max-width:500px) {
@@ -78,6 +82,18 @@ transform: translate(-50%, -50%) !important;
 
     .slick-dots {
     bottom:-30px !important;
+}
+.swiper-slide-active .reviews-items{
+    background: #F4EFEF !important;
+}
+
+
+    
+}
+
+@media (max-width:1024px) {
+.swiper-slide-active .reviews-items{
+    background: #F4EFEF !important;
 }
 
 
