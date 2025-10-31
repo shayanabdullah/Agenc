@@ -12,14 +12,11 @@ import loaderImg from './assets/loader.gif'
 
 const App = () => {
   const [loader, setLoader] = useState(true)
-let loadingTime = window.addEventListener('load', function(){
-
-})
-
   useEffect(()=>{
 setTimeout(() => {
   setLoader(false)
-}, loadingTime);
+  return () => clearTimeout(timer)
+}, 800);
   }, [])
   return (
   <>
