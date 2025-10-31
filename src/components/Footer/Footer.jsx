@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="left md:w-[70%]">
-                        <div className="text-box grid xs:grid-cols-1 normal:grid-cols-3 md:grid-cols-4 gap-y-[50px] ">
+                        <div className="text-box grid xs:grid-cols-2 normal:grid-cols-3 md:grid-cols-4 gap-y-[50px] ">
                             <div className="about pl-4 md:pl-4">
                                 <h2 className='font-inter font-semibold text-xl pb-[41px]'>About</h2>
                                 <ul className='leading-[260%]'>

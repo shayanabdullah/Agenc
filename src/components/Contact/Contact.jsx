@@ -62,15 +62,15 @@ const Contact = () => {
             <section className='md:py-[150px] py-20 bg-[#F3F3F3]' id='contact'>
                 <div className="container">
                     <div className="contact-main px-3 flex flex-col md:flex-row md:gap-44">
-                        <div className="right md:w-[40%] py-44">
+                        <div className="right md:w-[40%] md:py-44 py-10">
                             <div className="text text-center md:text-left">
-                                <h2 className='text-[45px] font-inter font-bold text-[#151515] leading-[120%] pb-6'>We Do design, Code  & Development</h2>
-                                <p className='text-[16px] font-inter font-normal text-[#737373] leading-[170%] pb-2.5'>I had a good experience while using this app, what fascinated me <br /> was the live tracking feature There are many variations of passages <br /> of Lorem Ipsum available, but the majority.</p>
-                                <p className='text-[16px] font-inter font-normal text-[#737373] leading-[170%]'>There are many variations of passages of Lorem Ipsum available, but themajority  have suffered alteration in some form.</p>
+                                <h2 className='md:text-[45px] text-4xl font-inter font-bold text-[#151515] leading-[120%] pb-6'>We Do design, Code  & Development</h2>
+                                <p className='md:text-[16px] text-xs font-inter font-normal text-[#737373] leading-[170%] pb-2.5'>I had a good experience while using this app, what fascinated me <br /> was the live tracking feature There are many variations of passages <br /> of Lorem Ipsum available, but the majority.</p>
+                                <p className='md:text-[16px] text-xs font-inter font-normal text-[#737373] leading-[170%]'>There are many variations of passages of Lorem Ipsum available, but themajority  have suffered alteration in some form.</p>
                             </div>
                         </div>
                         <div className="left md:w-[40%]">
-                            <div className="form-box bg-white pt-[61px] px-11 rounded-[20px]">
+                            <div className="form-box bg-white md:pt-[61px] md:px-11 pt-10 px-7 rounded-[20px]">
                                 <div className="header pb-8">
                                     <h2 className='font-inter font-bold text-3xl text-[#151515] text-center'>Get a free quote now</h2>
                                 </div>

@@ -53,11 +53,11 @@ const Navber = () => {
         <div className={`sidebar h-screen bg-[#927df7] z-99 fixed top-0 right-0 transition-all ease-in-out duration-500 opacity-0 w-0  max-w-[300px]  ${MenuOpen === true ? 'w-full opacity-100' : ''} `}>
           <div className="menu h-full flex flex-col justify-center items-center ">
             <ul className='flex flex-col items-center justify-center gap-[50px]'>
-              <li className=''><a href="#" onClick={() => setActiveLink('home')} className={activeLink === 'home' ? 'text-[#4756DF]! ' : ""} >Home</a></li>
-              <li className=''><a href="#about" className={activeLink === 'about' ? 'text-[#4756DF]!' : ""} onClick={() => setActiveLink('about')}>About</a></li>
-              <li className=''><a href="#service" className={activeLink === 'service' ? 'text-[#4756DF]!' : ""} onClick={() => setActiveLink('service')}>Service</a></li>
-              <li className=''><a href="#carrers" className={activeLink === 'carrer' ? 'text-[#4756DF]!' : ""} onClick={() => setActiveLink('carrer')}>Careers</a></li>
-              <li className=''><a href="#contact" className={activeLink === 'contact' ? 'text-[#4756DF]!' : ""} onClick={() => setActiveLink('contact')}>Contact</a></li>
+              <li className=''><a href="#" onClick={() => setMenuOpen(false)} >Home</a></li>
+              <li className=''><a href="#about"  onClick={()=> setMenuOpen(false)}>About</a></li>
+              <li className=''><a href="#service" onClick={()=> setMenuOpen(false)} >Service</a></li>
+              <li className=''><a href="#carrers" onClick={()=> setMenuOpen(false)} >Careers</a></li>
+              <li className=''><a href="#contact" onClick={()=> setMenuOpen(false)} >Contact</a></li>
             </ul>
             <div className="button pt-9">
               <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Contact</a> </button>
