@@ -2,8 +2,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
 import banner from '../../assets/banner.png'
-
-;
+import { motion } from "motion/react";
+import { fadeIn, textVariant } from "../../Utilitils/motion";
 const Banner = () => {
   const settings = {
     dots: true,
@@ -20,24 +20,43 @@ const Banner = () => {
 
     return (
         <>
-            <section className='relative z-10 banner lg:py-[300px] md:py-[220px] py-[140px] px-4'>
-               
+            <motion.section
+            className='relative z-10 banner lg:py-[300px] md:py-[220px] py-[140px] px-4'>
                 <div className="container">
                   <div className="w-full flex items-center justify-center ">
-                    <div className="content-main w-full ">
+                    <motion.div
+                          variants={fadeIn("up", 0.3)}
+                          initial="hidden"
+                          whileInView="show"
+                          viewport={{once : true}}
+                    className="content-main w-full ">
                      <Slider {...settings}>
                            <div className="content-items text-center">
-                            <h1 className='lg:text-[75px] normal:text-5xl text-4xl text-white font-inter font-bold leading-[120%] text-center'>We Help brands with high
+                            <motion.h1 
+                            variants={textVariant(0.4)}
+                                  initial="hidden"
+                                  whileInView="show"
+                                  viewport={{once : true}}
+                            className='lg:text-[75px] normal:text-5xl text-4xl text-white font-inter font-bold leading-[120%] text-center'>We Help brands with high
                                 <span className="block">quality services</span>
-                            </h1>
-                            <p className='text-center normal:pt-[51px] pt-[30px] text-white font-inter font-normal normal:text-lg text-xs leading-[180%] '>
+                            </motion.h1>
+                            <motion.p
+                            variants={textVariant(0.5)}
+                                initial="hidden"
+                                  whileInView="show"
+                                  viewport={{once : true}}  
+                            className='text-center normal:pt-[51px] pt-[30px] text-white font-inter font-normal normal:text-lg text-xs leading-[180%] '>
                                 There are many variations of passages of Lorem Ipsum available, but themajority 
                                  <span className="block">have suffered alteration in some form, by injected humour, or randomised words </span>
                                  which don't look.
-                            </p>
-                                       <div className="button py-10">
+                            </motion.p>
+                                       <motion.div
+                                             variants={fadeIn("up", 0.6)}
+                                             
+                                            
+                                       className="button py-10">
             <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Get Started</a> </button>
-          </div>
+          </motion.div>
 
                         </div>
                            <div className="content-items text-center">
@@ -83,12 +102,12 @@ const Banner = () => {
 
                         </div>
                      </Slider>
-                    </div>
+                    </motion.div>
                 </div>  
                 </div>
                 
 
-            </section>
+            </motion.section>
 
 
         </>

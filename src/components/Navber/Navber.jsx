@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
+import { motion } from 'motion/react';
+import { fadeIn } from '../../Utilitils/motion';
+
 const Navber = () => {
   const [activeLink, setActiveLink] = useState('')
   const [MenuOpen, setMenuOpen] = useState(false);
@@ -7,7 +10,13 @@ const Navber = () => {
   return (
     <>
       {/* desktop navber */}
-      <nav className='bg-transparent absolute top-0 left-0 z-20 w-full md-2:block hidden ' >
+
+      <motion.nav
+      variants={fadeIn("down", 0.3)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{once : true}}
+      className='bg-transparent absolute top-0 left-0 z-20 w-full md-2:block hidden ' >
         <div className="container">
           <div className="nav-main flex justify-between items-center py-[50px]">
             <div className="logo">
@@ -29,10 +38,11 @@ const Navber = () => {
             </div>
           </div>
         </div>
-      </nav>
-
+      </motion.nav>
+    
       {/* mobile navber */}
-      <nav className='bg-transparent absolute top-0 left-0  py-5 w-full z-98 md-2:hidden'>
+<section>
+        <nav className='bg-transparent absolute top-0 left-0  py-5 w-full z-98 md-2:hidden'>
         <div className="container">
           <div className="menu-main flex justify-between items-center w-full px-2">
             <div className="logo pl-3">
@@ -70,6 +80,7 @@ const Navber = () => {
       </div>
         <div className={`overlay fixed top-0 left-0 w-full h-screen bg-[#39393c] opacity-75 cursor-pointer z-98 ${MenuOpen === true ? 'block' : "hidden "}`} onClick={ ()=> setMenuOpen(false)}></div>
 
+</section>
 
 
     </>
