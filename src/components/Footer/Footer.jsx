@@ -1,30 +1,37 @@
 import React from 'react'
 import logo from '../../assets/favicon.png'
+import { motion, testValueType } from 'motion/react'
+import { fadeIn, textVariant } from '../../Utilitils/motion'
 const Footer = () => {
     return (
         <>
-        <section className='md:py-[150px] py-20 bg-white' id='footer'>
+        <motion.section
+          variants={fadeIn('up', 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once : true}}
+        className='md:py-[150px] py-20 bg-white' id='footer'>
             <div className="container">
                 <div className="footer-main flex flex-col md:flex-row  gap-[130px]">
                     <div className="right md:w-[30%]">
-                        <div className="text">
+                        <motion.div variants={fadeIn('up', 0.2)} className="text">
                             {/* logo */}
-                            <div className="logo flex items-center gap-2 pb-8 pl-4 md:pl-0">
+                            <motion.div variants={fadeIn('up', 0.3)} className="logo flex items-center gap-2 pb-8 pl-4 md:pl-0">
                                 <img src={logo} alt="" />
                                 <h2 className='font-inter font-semibold text-4xl text-[#151515]'>Agenc</h2>
-                            </div>
-                            <p className='text-[16px] font-inter font-normal text-[#737373] leading-[170%] pl-4 md:pl-0 '>I had a good experience while using this app, 
+                            </motion.div>
+                            <motion.p variants={textVariant(0.5)} className='text-[16px] font-inter font-normal text-[#737373] leading-[170%] pl-4 md:pl-0 '>I had a good experience while using this app, 
                                 <br />
                                 what fascinated me was the live tracking
                                 <br />
                                  feature There are many variations of passages
                                  <br />
-                                  of Lorem Ipsum available, but the majority.</p>
-                        </div>
+                                  of Lorem Ipsum available, but the majority.</motion.p>
+                        </motion.div>
                     </div>
                     <div className="left md:w-[70%]">
                         <div className="text-box grid xs:grid-cols-2 normal:grid-cols-3 md:grid-cols-4 gap-y-[50px] ">
-                            <div className="about pl-4 md:pl-4">
+                            <motion.div variants={fadeIn('up', 0.6)} className="about pl-4 md:pl-4">
                                 <h2 className='font-inter font-semibold text-xl pb-[41px]'>About</h2>
                                 <ul className='leading-[260%]'>
                                     <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'><a href="#about">About Us</a></li>
@@ -33,8 +40,8 @@ const Footer = () => {
                                 <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'>Careers</li>
                                 </ul>
 
-                            </div>
-                            <div className="company pl-4 md:pl-4">
+                            </motion.div>
+                            <motion.div variants={fadeIn('up', 0.7)} className="company pl-4 md:pl-4">
                                 <h2 className='font-inter font-semibold text-xl pb-[41px]'>Company</h2>
                                 <ul className='leading-[260%]'>
                                     <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'><a href="#about">Our Team</a></li>
@@ -43,8 +50,8 @@ const Footer = () => {
                                 <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'>Blog</li>
                                 </ul>
 
-                            </div>
-                            <div className="Support pl-4 md:pl-4">
+                            </motion.div>
+                            <motion.div variants={fadeIn('up', 0.8)} className="Support pl-4 md:pl-4">
                                 <h2 className='font-inter font-semibold text-xl pb-[41px]'>Support</h2>
                                 <ul className='leading-[260%]'>
                                     <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'><a href="#about">About</a></li>
@@ -53,21 +60,21 @@ const Footer = () => {
                                 <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'>Accesbility</li>
                                 </ul>
 
-                            </div>
-                            <div className="Get-in-touch pl-4 md:pl-4">
+                            </motion.div>
+                            <motion.div variants={fadeIn('up', 0.9)} className="Get-in-touch pl-4 md:pl-4">
                                 <h2 className='font-inter font-semibold text-xl pb-[41px]'>Get in touch</h2>
                                 <ul className='leading-[260%]'>
                                     <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'><a href="#about">info@gmail.com</a></li>
                                 <li className='text-[16px] font-inter font-normal text-[#737373] cursor-pointer'>+88 0121 0212</li>
                                 </ul>
 
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section>
+        </motion.section>
          <div className="container">
              <footer className='py-8 border-t border-[#E8E8E8] bg-white text-center'>
   <p className='text-[16px] font-inter font-normal text-[#cccccc] cursor-pointer'>All credit goes to Shayan Abdullah</p>

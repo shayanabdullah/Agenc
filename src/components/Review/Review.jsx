@@ -5,71 +5,31 @@ import reviewer2 from "../../assets/reviewer-2.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination, Navigation } from 'swiper/modules';
-
+import { Navigation } from 'swiper/modules';
+import { motion } from 'motion/react';
+import { fadeIn, textVariant } from '../../Utilitils/motion';
 const Review = () => {
-
-    const PrevArrow = ({ onClick }) => {
-        return (
-            <div
-                className="w-10 h-10 rounded-full bg-[#4756DF] flex items-center justify-center absolute lg:top-1/2 lg:left-0  z-20 bottom-[-18%] left-[52%] -translate-y-1/2 -translate-x-1/2 cursor-pointer -rotate-180"
-                onClick={onClick}
-            >
-                <i className="fa-solid fa-chevron-left text-white text-lg"></i>
-            </div>
-        );
-    };
-
-
-    // const settings = {
-    //   speed: 500,
-    //  slidesToShow: 3,
-    //  slidesToScroll: 1,
-    //   infinite: true,
-    //   centerMode: true,
-    //      initialSlide: 0,
-    //   nextArrow: <NextArrow />,
-    //   prevArrow: <PrevArrow />,
-    //   responsive: [
-    //     {
-    //       breakpoint: 1024,
-    //       settings: {
-    //         slidesToShow: 2,
-    //         slidesToScroll: 1,
-    //         centerMode: false,
-    //            initialSlide: 2,
-    //       },
-    //     },
-    //     {
-    //       breakpoint: 768,
-    //       settings: {
-    //         initialSlide: 1,
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         centerMode: true,
-
-    //       },
-    //     },
-    //   ],
-    // };
-
-
-
     return (
         <>
-            <section className='bg-white pb-[207px]'>
+            <motion.section
+              variants={fadeIn('up', 0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{once : true}}
+            className='bg-white pb-[207px] pt-20 lg:pt-0'>
                 <div className="container ">
                     {/* Header */}
                     <div className="header w-full text-center pb-[130px]">
-                        <h2 className="text-[45px] font-inter font-bold text-[#151515] leading-[120%]">Some Client Reviews</h2>
-                        <p className="text-center font-inter font-normal text-[#737373] leading-[170%] pt-4">There are many variations of passages of Lorem Ipsum available, but themajority <br />  have suffered alteration in some form..
-                        </p>
+                        <motion.h2 variants={textVariant(0.4)} className="text-[45px] font-inter font-bold text-[#151515] leading-[120%]">Some Client Reviews</motion.h2>
+                        <motion.p variants={textVariant(0.5)} className="text-center font-inter font-normal text-[#737373] leading-[170%] pt-4">There are many variations of passages of Lorem Ipsum available, but themajority <br />  have suffered alteration in some form..
+                        </motion.p>
                     </div>
 
                     {/* Reviews */}
 
                     <div className="reviews-main  relative w-full">
-                        <div 
+                        {/* Button */}
+                        <div
                             className="swiper-button-prev w-10 h-10 rounded-full bg-[#4756DF] flex items-center justify-center absolute  xl:top-1/2 xl-2:left-0! xl:left-5  z-20 bottom-[-20%] left-[43%] md:bottom-[-25%] md:left-[46%] -translate-y-1/2 -translate-x-[43%]    "
                         >
                             <i className="fa-solid fa-chevron-left text-white text-lg"></i>
@@ -79,6 +39,9 @@ const Review = () => {
                         >
                             <i className="fa-solid fa-chevron-right text-white text-lg"></i>
                         </div>
+
+
+                        {/* slider */}
                         <Swiper slidesPerView={1}
                             spaceBetween={5}
                             loop={true}
@@ -95,15 +58,18 @@ const Review = () => {
                                 },
                             }}
                             navigation={{
-                                   nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
 
                             }}
                             modules={[Navigation]}
                             className="mySwiper"
+                                     initial="hidden"
+                    whileInView="show"
+                    viewport={{once : true}}
                         >
                             <SwiperSlide>
-                                <div className="reviews-items py-[54px] px-[58px] rounded-[30px]">
+                                <motion.div variants={fadeIn('up', 0.4)} className="reviews-items py-[54px] px-[58px] rounded-[30px]">
                                     <div className="img-box pb-5">
                                         <img src={quote} alt="" />
                                     </div>
@@ -127,10 +93,10 @@ const Review = () => {
                                         </div>
                                     </div>
 
-                                </div>
+                                </motion.div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="reviews-items py-[54px] px-[58px] rounded-[30px]">
+                                <motion.div variants={fadeIn('up', 0.5)}  className="reviews-items py-[54px] px-[58px] rounded-[30px]">
                                     <div className="img-box pb-5">
                                         <img src={quote} alt="" />
                                     </div>
@@ -154,10 +120,10 @@ const Review = () => {
                                         </div>
                                     </div>
 
-                                </div>
+                                </motion.div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="reviews-items py-[54px] px-[58px] rounded-[30px]">
+                                <motion.div variants={fadeIn('up', 0.6)}  className="reviews-items py-[54px] px-[58px] rounded-[30px]">
                                     <div className="img-box pb-5">
                                         <img src={quote} alt="" />
                                     </div>
@@ -181,10 +147,10 @@ const Review = () => {
                                         </div>
                                     </div>
 
-                                </div>
+                                </motion.div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="reviews-items py-[54px] px-[58px] rounded-[30px]">
+                                <motion.div variants={fadeIn('up', 0.7)}  className="reviews-items py-[54px] px-[58px] rounded-[30px]">
                                     <div className="img-box pb-5">
                                         <img src={quote} alt="" />
                                     </div>
@@ -208,7 +174,7 @@ const Review = () => {
                                         </div>
                                     </div>
 
-                                </div>
+                                </motion.div>
                             </SwiperSlide>
 
                         </Swiper>
@@ -220,7 +186,7 @@ const Review = () => {
 
                     </div>
                 </div>
-            </section>
+            </motion.section>
         </>
     )
 }

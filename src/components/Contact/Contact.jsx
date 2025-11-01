@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { motion } from 'motion/react'
+import { fadeIn, textVariant } from '../../Utilitils/motion'
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -59,18 +61,22 @@ const Contact = () => {
 
     return (
         <>
-            <section className='md:py-[150px] py-20 bg-[#F3F3F3]' id='contact'>
+            <motion.section
+             variants={fadeIn('up', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{once : true}} className='md:py-[150px] py-20 bg-[#F3F3F3]' id='contact'>
                 <div className="container">
                     <div className="contact-main px-3 flex flex-col md:flex-row md:gap-44">
-                        <div className="right md:w-[40%] md:py-44 py-10">
+                        <motion.div variants={fadeIn('up', 0.4)} className="right md:w-[40%] md:py-44 py-10">
                             <div className="text text-center md:text-left">
-                                <h2 className='md:text-[45px] text-4xl font-inter font-bold text-[#151515] leading-[120%] pb-6'>We Do design, Code  & Development</h2>
-                                <p className='md:text-[16px] text-xs font-inter font-normal text-[#737373] leading-[170%] pb-2.5'>I had a good experience while using this app, what fascinated me <br /> was the live tracking feature There are many variations of passages <br /> of Lorem Ipsum available, but the majority.</p>
-                                <p className='md:text-[16px] text-xs font-inter font-normal text-[#737373] leading-[170%]'>There are many variations of passages of Lorem Ipsum available, but themajority  have suffered alteration in some form.</p>
+                                <motion.h2 variants={textVariant(0.4)} className='md:text-[45px] text-4xl font-inter font-bold text-[#151515] leading-[120%] pb-6'>We Do design, Code  & Development</motion.h2>
+                                <motion.p variants={textVariant(0.5)}  className='md:text-[16px] text-xs font-inter font-normal text-[#737373] leading-[170%] pb-2.5'>I had a good experience while using this app, what fascinated me <br /> was the live tracking feature There are many variations of passages <br /> of Lorem Ipsum available, but the majority.</motion.p>
+                                <motion.p variants={textVariant(0.6)}  className='md:text-[16px] text-xs font-inter font-normal text-[#737373] leading-[170%]'>There are many variations of passages of Lorem Ipsum available, but themajority  have suffered alteration in some form.</motion.p>
                             </div>
-                        </div>
+                        </motion.div>
                         <div className="left md:w-[40%]">
-                            <div className="form-box bg-white md:pt-[61px] md:px-11 pt-10 px-7 rounded-[20px]">
+                            <motion.div variants={fadeIn("up", 0.5)} className="form-box bg-white md:pt-[61px] md:px-11 pt-10 px-7 rounded-[20px]">
                                 <div className="header pb-8">
                                     <h2 className='font-inter font-bold text-3xl text-[#151515] text-center'>Get a free quote now</h2>
                                 </div>
@@ -126,8 +132,11 @@ const Contact = () => {
                                         <button className="py-4 w-full bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer" type='submit'> Get Pricing Now </button>
                                     </div>
                                 </form>
-                                {/* notify */}
-                                             <div className={`notify fixed top-[-110px] left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${submit === true ? 'top-[50px]' : ""}`}>
+                            </motion.div>
+                        </div>
+                        
+                                   {/* notify */}
+                                             <div className={`notify fixed top-0 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${submit === true ? 'top-[50px] block' : "opacity-0"}`}>
                                         <div className="box bg-[#e2e0e0] py-3 text-center px-2  border border-[#d3d3d3] rounded-[10px] w-[450px]">
                                             <p className='font-inter font-medium text-[#151515] text-center text-[14px] flex items-center gap-1 justify-center'><span className=" font-bold text-lg">Thank you! Your submission was successful.</span> <i className="fa-solid fa-circle-check text-lg text-green-800"></i> <br />
                                                </p>
@@ -136,12 +145,9 @@ const Contact = () => {
                                         </div>
                                     </div>
 
-
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
         </>
     )

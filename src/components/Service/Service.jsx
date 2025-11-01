@@ -59,14 +59,16 @@ const Service = () => {
                         </motion.div>
                         <motion.div variants={fadeIn('up', 0.4)}  className="service-items normal-2:px-[49px] pt-20 pb-[47px] rounded-[20px] border-2 border-transparent hover:border-black/25 hover:shadow-xl  duration-300 px-2">
                             <div className="item-body text-center">
-                                <div className="img w-full flex justify-center">
+                                <motion.div 
+                                variants={fadeIn('up', 0.4)}
+                                className="img w-full flex justify-center">
                                     <img src={ui} alt="" />
-                                </div>
+                                </motion.div>
                                 <div className="text-box text-center">
-                                    <h3 className='font-inter font-bold md:text-[25px] text-3xl text-[#151515] pt-10'>UI/UX Design</h3>
-                                    <p className='text-center pt-4 font-inter font-normal text-[#737373] leading-[150%]'>There are many variations of passages of Lorem Ipsum available, but themajority  have suffered alteration in some form, by injected humour, or randomised words
+                                    <motion.h3 variants={textVariant(0.4)} className='font-inter font-bold md:text-[25px] text-3xl text-[#151515] pt-10'>UI/UX Design</motion.h3>
+                                    <motion.p variants={textVariant(0.5)} className='text-center pt-4 font-inter font-normal text-[#737373] leading-[150%]'>There are many variations of passages of Lorem Ipsum available, but themajority  have suffered alteration in some form, by injected humour, or randomised words
                                         <br />  which don't look.
-                                    </p>
+                                    </motion.p>
                                 </div>
 
                             </div>
