@@ -60,7 +60,7 @@ const Navber = () => {
       </nav>
 
       <div className="sidebar-main relative">
-        <div className={`sidebar h-screen bg-[#927df7] z-99 fixed top-0 right-0 transition-all ease-in-out duration-500 opacity-0 w-0  max-w-[300px]  ${MenuOpen === true ? 'w-full opacity-100' : ''} `}>
+        <div className={`sidebar h-screen bg-[#7d6cd2] z-99 fixed top-0 right-0 transition-all ease-in-out duration-500 opacity-0 w-0  max-w-[300px]  ${MenuOpen === true ? 'w-full opacity-100' : ''} `}>
           <div className="menu h-full flex flex-col justify-center items-center ">
             <ul className='flex flex-col items-center justify-center gap-[50px]'>
               <li className=''><a href="#" onClick={() => setMenuOpen(false)} >Home</a></li>
@@ -70,7 +70,7 @@ const Navber = () => {
               <li className=''><a href="#contact" onClick={()=> setMenuOpen(false)} >Contact</a></li>
             </ul>
             <div className="button pt-9">
-              <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer"> <a href="#contact">Contact</a> </button>
+              <button className="py-4 px-9 bg-[#6A4DF4] text-white text-2xl font-inter font-medium rounded-xl cursor-pointer border border-white"> <a href="#contact">Contact</a> </button>
             </div>
           </div>
        <div className="icon absolute top-4 left-6 text-white text-[24px] cursor-pointer" onClick={() => setMenuOpen(false)}>
