@@ -21,7 +21,7 @@ const Banner = () => {
     return (
         <>
             <motion.section
-            className='relative z-10 banner lg:py-[300px] md:py-[220px] py-[140px] px-4'>
+            className='relative z-10 banner lg:py-[260px] md:py-[220px] py-[140px] px-4 lg:h-screen lg:w-full'>
                 <div className="container">
                   <div className="w-full flex items-center justify-center ">
                     <motion.div
